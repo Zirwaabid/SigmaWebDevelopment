@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+         nav ul li {
+            padding: 3px;
+            margin: 33px;
+            display: inline-block;
+            /* background-color: rgb(128, 248, 218); */
+            list-style-position: inside;
+            list-style: disc inside;
+            border: 2px solid rgb(64, 16, 109);
+
+            /* list-style-image: url(yrwwqpnyb7ys.jpg);
+        list-style: disc inside url(yrwwqpnyb7ys.jpg); */
+        }
+        nav ul li::before {
+            content: "\1F697";
+            margin-right: 5px;
+        } 
+        /* for navbar */
+        /* nav ul li{
+            list-style: none;
+            padding: 38px;
+            margin: 33px;
+        }
+        nav ul{
+            display: flex;
+        } */
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

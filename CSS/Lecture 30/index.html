@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            /* is ka andar jo bhi variable lagayn ga usay puri website pa jahan bhin use krna ho ga color ya sec color laga kr use kr saktay hain yan jo bhi variable likha ho ga jaisay ka nav ul  li main or container main  
+            agar color change kr ho ga to sirf ik jaga yani root sa change karain gay to sab sa change ho jaye ga easy*/
+            --color: rgba(155, 105, 201, 0.76);
+            --secolor:rgba(166, 112, 216, 0.486);
+            --defpad: 35px 79px;
+
+            /* we can use any element sich as padding,margin,opacity and anything that required */
+            /* this is global variable */
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .nav ul{
+        display: flex;
+       }
+        .nav ul li{
+            background-color: var(--color);
+            padding: var(--defpad) ;
+            list-style: none;
+            border: 2px solid var(--secolor);
+        }
+          /* ul li:first-child{
+           --color: rgba(143, 173, 32, 0.76);
+            this is local variable  
+        }   */
+        .container{
+            background-color: var(--secolor);
+            padding: 33px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>History</li>
+            <li>Setting</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora fugiat perspiciatis recusandae ab vero possimus debitis tempore quod vel maxime, cumque alias velit illum sunt aut cupiditate? At quam, nam quibusdam deleniti officia quis odit? Aliquid hic, atque ipsa dolorem inventore quam. Eos, quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repudiandae obcaecati accusamus adipisci nostrum ex aperiam maiores, veniam laudantium ipsum? Dolores minima veritatis inventore, fugit ducimus soluta, voluptas in optio commodi unde aperiam?
+    </div>
+</body>
+</html>

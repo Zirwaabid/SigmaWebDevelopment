@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: blue;
+        } */
+
+        /* .box::first-line{
+            color: blueviolet;
+        } */
+
+        .boxes * {
+            /* universal selector ka matlab sab pa lagay ga jojo boxes main ho ga */
+            color: rgb(2, 26, 26);
+            border: 2px solid blue;
+        }
+
+        /* .box,[data-color="primary"]{
+            jahan data color primary laga ho ga wahan padding top lag jaye gi us ka sath grouping bhi kr saktay hain jaisay uper .box bhi ha
+            padding-top: 45px; 
+        }  */
+
+        /* .box:nth-child(even){
+         background-color: blueviolet;
+        } */
+
+        /* .box:nth-child(odd){
+            background-color: brown;
+         } */
+
+         /* .box:nth-last-child(2){
+            background-color: brown;
+         } */
+
+         .boxes::before{
+            content: "I am a Pakistani";
+            color: rgb(88, 7, 75);
+         }
+
+         .box:nth-child(2)::before{
+            content: "Hi, I am a content " ;
+         }
+
+         .boxes::after{
+            content: "Sigma course is good.";
+            color: rgb(223, 97, 24);
+         }
+      
+         /* jab koi text select karay ga tab show ho ga */
+         ::selection{ 
+            color: black;
+            background-color: crimson;
+         }
+
+         .box::first-letter{
+            color: peru;
+            font-size: 45px;
+         }
+
+         input::placeholder{
+         color: rgb(99, 99, 104);
+         }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hi I am a box</div>
+        <div class="box">Hi I am a box</div>
+        <div class="box">Hi I am a box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+
+</body>
+
+</html>

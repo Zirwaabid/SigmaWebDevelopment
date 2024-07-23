@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*1- Element Selector */
+        div {
+            background-color: cornflowerblue;
+            color: black;
+        }
+
+        /* 2-Class selector */
+        .bat {
+            background-color: aqua;
+            color: rgb(145, 28, 28);
+        }
+
+        /* 3-id selector */
+        #ball{
+            background-color: rgb(235, 149, 195);
+            color: rgb(3, 15, 3);
+        }
+
+        /* 4-Child selector */
+        div > p {
+            background-color: greenyellow;
+            color: black;
+        }
+        /* 5-Descendant selector */
+        div  p {
+            background-color: greenyellow;
+            color: black;
+        }
+        /* 6-Universal selector */
+        *{
+            margin: 2; padding: 2;
+        } 
+        /* 7-pseudo selector */
+        a:visited{
+            color: rgb(8, 170, 35);
+        }
+        a:link{
+            color: brown;
+        }
+        a:active{
+            background-color: rgb(241, 153, 153);
+        }
+        a:hover{
+              color: crimson;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>1-Element Selector</h1>
+    <div>Example of element selector(1) see code below title </div>
+    <div>Example of element selector see code below title (1) if we write more than 1 div then all the div's background
+        color changed due to element selector like this line</div>
+    <h1>2-Class Selector</h1>
+    <div class="bat">Example of class Selector(2) see code below element selector.We use element selector (div) to
+        change color but if we dont want to change the color of this div then we use class selector like this line
+    </div>
+    <div class="bat">another div with same class as upper</div>
+    <h1>3-ID Selector</h1>
+    <div id="ball">see code below class selector.We use div like above but we dont want this div to look same like above so we can also use ID selector instead of Class Selector</div>
+    <h1>4-Child Selector</h1>
+    <div>if we want to style the para or another element that is direct inside the div then we use child Selector means div parent or any element inside div directly (means div ka andar ha nakay div ka andar kisi or element ka andar) is the child of div (these lines are div that style by element selector used first)
+        <p> and this is a para directly inside div that style by child selector</p>
+    </div>
+    <h1>5-Descendant Selector</h1>
+    <div>
+        <main>
+            <article>
+                <p>This is an example of descendants selector see code below style 5  means this para is not directly placed inside div rather it is enclose in div then main then article so it is not styled by child selector.So we use descendants selector to style this para measn if para or other element is inside div at any place they styles by descendants selector like this.</p>
+            </article>
+        </main>
+    </div>
+    <h1>6-Universal selector</h1>
+    <h4>for margin and padding of all the above lines
+        All the lines are attached with each other through this selector but i then i give 2 space lines instead of zero see code of style 6
+    </h4>
+    <h1>7-Pseudo Selector</h1>
+    There are many types of pseudo selector some are given below:
+    <h2>1-a visited</h2>
+    <h4>for example</h4>
+    <a target="_blank" href="https:www.google.com">Google</a>
+    see code style 7a if we want that when google link is visited its color has change so we use a visited Selector like in this link
+    <h2>2-a link</h2>
+    <h4>for Example</h4>
+    <a target="_blank" href="https:www.facebook.com">facebook</a>
+   if we want to change the color of link before visited
+   <h2>3-a active</h2>
+   when we click on link it shows background color like in above link
+   <h2>4-a hover</h2>
+   when we take mouse on link it shows color without click but which is called hover like in above link but when we click on link it shows color its called active.
+
+    
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <style>
+        html {
+            font-size: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* .px{
+            box-sizing: border-box;
+            border: 3px solid blue;
+            background-color: cadetblue;
+            width: 1280px;
+        } */
+        .navbar {
+            box-sizing: border-box;
+            border: 3px solid rgb(6, 6, 36);
+            background-color: rgb(86, 223, 228);
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 3px solid rgb(6, 6, 36);
+            background-color: aqua;
+            width: 80vw;
+            margin: 23px auto;
+            font-size: 18px;
+            min-height: 80vh;
+        }
+
+        /* .container p{
+            font-size: 2em;
+         } */
+        .container p {
+            font-size: 2rem;
+         /* width: 50%; */
+        }
+
+        .mycont {
+            box-sizing: border-box;
+            border: 3px solid black;
+            color: black;
+            font-size: 23px;
+            /* width: 100vmin; */
+            margin: 23px auto;
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
+
+    <!-- <div class="px">This is a an example of px unit</div> -->
+
+    <!-- vw means viewport width agar hum 20vw dain gay to page ka 20% hisa lay gi width or same vh agar 80vh dain  gay to page ka 80% hisa height lay gi chahay wo kisi bhi device per dekhain -->
+
+    <!-- em means ka agar kisi element eg div ko hum na 20px font size diya ha lakin hum chahtay hain ka div ka andar jo para ha us ka font size div sa double ho jaye to hum para ko 2em dain ga means 20x2=40 to para ka font size 40 ho jaye ga -->
+
+    <!-- rem means root element ka double html root elementh ha agar hum na html ka font size 12px diya ha to pura ka pura html 12px ho jaye ga lakin agar hum chatay hain ka html main jo para ha us ka size html uani root element sa double ho jaye to hum para main 2 rem laga dain ka 12x2=24 to para ka font size 24px ho jaye ga root sa double -->
+
+    <!-- vmin means jo minimum ho yani agar laptop ha to laptop ki height minimum hoti ha as compared to width to laptop main vmin equals to vheight lakin agar phone ki baat ho rhi ha to phone main width minimum hoti ha as compared to height to phone main vmin equals to vwidth -->
+
+    <!-- % unit ka matlab ha ka agar eg agar div main para ha agar hum para ki width 50% kr dain to wo div ki width sa 50% ho ga yani half yani parent sa half -->
+
+    <div class="navbar">This is an example of vw (viewport width) unit</div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore amet, voluptatum natus, quidem animi ut
+            error perferendis sed quis incidunt quam debitis repellat. Ex qui molestiae fugit atque, earum voluptas!
+            Sint in eveniet debitis aliquid modi, sed dignissimos vero? Non qui impedit illum. Quos, itaque, ipsum velit
+            consectetur dolores fugit ipsam atque quas dolorum aliquam saepe.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.ariatur ipsam sequi aspernatur. Facilis praesentium deserunt quam vitae odio qui quibusdam natus iusto maxime, corrupti nemo soluta accusamus atque asperiores repudiandae. Necessitatibus natus, adipisci nam placeat commodi eum quo voluptate cum illum quos sit aliquid labore accusamus laboriosam fugit numquam quae atque eos doloribus aut aspernatur explicabo assumenda magnam. Aliquam sapiente cumque magnam at? Perspiciatis ipsum illum iste minus sit quo quasi eligendi nulla repellat assumenda fuga distinctio labore odit quidem molestias laudantium exercitationem nihil veniam veritatis, amet deleniti sed est, perferendis sunt. Modi impedit accusantium amet deleniti, nemo neque consectetur, recusandae dolor dignissimos praesentium quos perferendis placeat ea illo provident sit similique aliquid! Debitis doloremque illo quia in fugit rerum ea eius natus iste placeat ipsum expedita accusantium nostrum numquam exercitationem unde culpa, aliquam saepe voluptates, quibusdam molestiae quis esse dolore mollitia. Soluta dolore esse consequatur voluptates, in temporibus quam exercitationem aliquid eligendi laborum. Assumenda dolorem sunt a, animi doloribus sint fuga quia obcaecati inventore porro soluta, quam minima repellat earum iure ipsum tempore sequi, voluptatem laudantium laborum dolorum repudiandae quod necessitatibus vel? Voluptatibus, distinctio! Ab sed odio nobis tempora alias inventore nihil, in dolore itaque provident, earum laboriosam? Non quas ipsum tempora enim voluptates, obcaecati distinctio aspernatur culpa facere maiores quis deleniti magni laboriosam dolores voluptatibus. Aliquam neque eos dignissimos, vero eveniet dolorem tempora commodi dolores impedit accusantium similique saepe dolor cumque placeat pariatur blanditiis! Atque magni autem libero iusto, eius rem sapiente fugiat similique ullam animi sed reprehenderit necessitatibus optio est, veniam molestiae corrupti obcaecati, accusamus ut praesentium! Temporibus sed quasi illum vero obcaequuntur harum fuga repudiandae! Recusandae repudiandae sed magni? Atque reprehenderit impedit cupiditate delectus praesentium?</p>
+    </div>
+    <div class="mycont">I am another container</div>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Class</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            border: 2px solid black;
+
+        }
+
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid rgb(16, 40, 67);
+            display: grid;
+            grid-template-columns: 33px 33px 33px 33px 33px;
+            gap: 106px;
+        }
+
+        .box1 {
+            /* rotate krnay ka liya , degree unit bhi use kr sktay hain */
+            /* transform: rotate(40deg); */
+
+            /* or turns bhi use kr sktay hain */
+            /* transform: rotate(0.25turn); */
+
+            /* we can also rotate in x,y or z axis */
+            transform: rotateX(45deg);
+            /* transform: rotateY(96deg); */
+            /* transform: rotateZ(45deg); */
+        }
+
+        .box2 {
+            /* transform scale  sa bara hojata ha size or usay x,y,z or 3d main bhi use kr sktay hain */
+            /* transform: scale(1.6); */
+            transform: scaleX(1.6);
+            /* transform: scaleY(1.6); */
+
+        }
+
+        .box3{
+            /* transform: skew(34deg); */
+
+            /* skew sa strech ho jata ha lakin skew x axis per nhi lgta */
+            transform: skewY(45deg);
+        }
+
+        .box4{
+            /* translate sa apni x or y ka according agay peechay ho jaye ga */
+            /* transform: translate(44px); */
+            /* transform: translateX(44px); */
+            transform: translateY(44px);
+        }
+
+        .box5{
+            /* we can use all the above properties in just one centex */
+            transform: rotateX(45deg) skewX(45deg) translateY(80%);
+        }
+        .box6{
+            /* agar humkoi navbar banana chatay hain or usay uper fix kr chahtay hain to ya use kr sktay hain */
+            transform: translateY(-477%) rotateX(78deg) scaleX(29);
+            background-color: brown;
+        }
+
+        .box7{
+            transform: rotateX(45deg);
+            /* transform origin sa hum origin set kr sktay hain matlab hum na kis point ka according rotate krna ha ya koi or property lagani ha */ 
+            /* default aisa hpti ha khud change kr sktay ho */
+            transform-origin:-50% -50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+    </div>
+</body>
+
+</html>

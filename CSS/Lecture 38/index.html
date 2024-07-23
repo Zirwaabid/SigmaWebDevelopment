@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid rgb(59, 58, 58);
+            height: 80vh;
+            display: flex;
+            /* sab properties flex ki display flex laga kr lagayen gay */
+
+            justify-content: center;
+            /* means side sa middle main aa jaye ga */
+
+            align-items: center;
+            /* means uper neechay sa middle main aa jaye ga */
+
+            /* default main flex direction row hoti ha lakin hum column bhi kr saktay hain */
+            /* flex-direction: column;
+            flex-direction: column-reverse; */
+
+            /* agar bohat ziyada content ho eg photos hon to wrap sa wo next line main chali jayn gi overflow nhi karain gi */
+            /* flex-wrap: wrap;
+            flex-wrap: wrap-reverse; */
+
+            /* agar ik he line ha to align item laga kr centre kr saktay hain uper neechay sa lakin agar multiple content ha jo ka wrap krnay say aye ga to align content laga kr centre karain ga */
+            /* align-content: center; */
+            
+            /* flex flow main pehlay hum flex direction (row,coulumn) likhtay hain phir hum batatay hain ka wrap krna ka wrap reverse */
+            /* flex-flow: row wrap; */
+   
+            /* gap sa gap dey saktay hain alag sa row or coulumn ka bhi da saktay hain */
+            /* gap: 30px; */
+            /* row-gap: 30px;
+            column-gap: 30px; */
+            /* shotened for row gap or coulumn gap */
+            /* gap: 40px 30px; */
+
+
+        }
+
+        .item {
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            margin: 4px;
+        
+        }
+        .item1{
+            /* jahan flex grow laga kr agar eg 2 lagayn gay to wo item 2 jaga lai ga */
+        /* flex-grow: 2; */
+        
+        /* flex shrink jis item pr lagayn gay jab zarorat pray gi wo shrink ho jaye ga eg jab phone main display chota ho jaye ga */
+        /* flex-shrink: 2; */
+
+        /* aligh self sai ik akelay item ko set kr sktay hain */
+        align-self: flex-start;
+        }
+
+        /* jis item ka order ziyada ho ga wo end pa chala jaye ga jis ko order 1 diya ha wo end pa chala gya because default order zero hota ha */
+        .order-2{
+            order: 1;
+            align-self: flex-end;
+        }
+        /* jis item ki class order 100 ho gi wo end pa chala jaye ga  */
+        .order-1{
+            order: 100;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item order-1">3</div>
+            <div class="item order-2">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+</body>
+
+</html>

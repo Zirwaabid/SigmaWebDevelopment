@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+           margin: 0%;
+           padding: 0%;
+        }
+        .box {
+            border: 2px solid rgb(19, 19, 66);
+            display: inline-block;
+            width: 344px;
+            padding: 45px;
+            margin: 40px;
+        }
+        /* .box1{
+             display none lagao gay to box gayab ho jaye ga or us ki space bhi khatam ho jaye gi 
+             display: none; 
+
+             visibility hidden lagao gay to box gayab ho ga lakin us ki space rhay gi
+            visibility: hidden;
+        } */
+    .box1{
+        /* display flex padding ka andar content ki direction ka liya 
+        display: flex; 
+         grid bhi display ki property ha
+        display: grid;  */
+        display: inline flex;
+        justify-content: center; 
+    }
+        
+
+    </style>
+</head>
+<body>
+ <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+
+    <!-- div block element ha thats why full line pa aye ga agar dusra div add karain gay to wo neechay aye ga -->
+    <!-- <div class="box">I am a box</div>
+    <div>I am another box</div> -->
+
+    <!-- lakin agar hum div ka style main display inline kr dain to to block inline element ban jaye ga lakin hum padding wagera nhi laga saktay to hum inline-block display property use karain gay like below ab dono div ik he line main ayen gay -->
+    <div class="box box1">I am a box</div>
+    <div class="box">I am another box</div>
+    
+    <!-- span inline element ha is liya dono span ik he line main ayen gay -->
+    <span>I am good girl and</span>
+    <span>Obedient</span>
+</body>
+</html>

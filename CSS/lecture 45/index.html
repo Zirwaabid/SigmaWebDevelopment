@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Property</title>
+    <style>
+        .container{
+            height: 40vh;
+            width: 50vw;
+            background-color: rgb(109, 218, 254);
+        }
+        .box{
+            height: 4vh;
+            width: 5vw;
+            background-color: rgb(254, 98, 181);
+
+            /* transition means kisi element ko ik jaga sa dusri jaga kaisay krna hai and it consist of 4 properties  */
+
+            /* means kis element p lagana hai jitni properties lagayn gai un sab per transition apply ho ga . if we want to transition all propertites then we use all or can also use multiple elemnts by separating them with commas*/
+            /* transition-property: all; */
+            /* transition-property: transform,background-color; etc */
+            /* transition-property: transform ; */
+
+            /* kitni speed ya kitni dar tak honi chaiya transition  */
+            /* transition-duration: 3s ; */
+
+           /* transition kis tarah ho yani us ka style kiya ho  */
+            /* transition-timing-function:cubic-bezier(0.07, 0.64, 0.58, 1) ; */
+
+            /* or kitni dar baad transition start ho element pr click krnay ka baad */
+            /* transition-delay: 1s; */
+
+            /* now we can also combine all these properties in one code */
+            transition: transform,3s,ease-in-out,1s;
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: rgb(10, 61, 62);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box translate"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        /* NOTE...... */
+        /* jo bhi position lagani ha us ka liya position property lazmi use krna parti hai static position hatanay ka liya */
+
+        /* VIP NOTE........ */
+        /* koi bhi element ka agay jo property lagaen gay to wo sab apnay parent ka relative set ho jaye gi agar us ka parent per position lagayen gay to otherwise body ka according yani top ka accoriding set hon gay,Transform,filter or perspective property can also make an element appear as positioned */
+
+        .box {
+            border: 2px solid black;
+            width: 80vw;
+            height: 433px;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        .box1 {
+            background-color: rgb(163, 238, 238);
+
+            /* position sticky means jahan bhi lagaye gay wahan stick kara rhay ga jaisay navbar hoti ha page scroll bhi kr lo navbar uper he rehti ha */
+            position: sticky;
+            top: 0;
+            height: 111px;
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+
+            /* position: absolute;
+            top: 3px;
+            left: 5px; */
+            /* position absolute jahan bhi laga kr top left right etc use krain gay wo apna parent dhonday ga ka kis ka relative us na ya cheezian set krni ha agar to parent ka andar position absolute laga ho ga to wo us ka relative ho jaye ga warna wo html top ka according set ho jaye ga */
+
+            /* position: relative; */
+            /* information about z-index in box 2 */
+            /* z-index: 1; */
+        }
+
+        .box2 {
+            background-color: azure;
+
+            /* position relative laga kr hum box ya koi bhi element ko us ki jaga sa top bottom left right property laga kr idher udher kr saktay hain */
+            /* position: relative;
+            top: -54px;
+            left: 53px; */
+
+            /* uper wali top property sa box ik dusray ka uper aa gaye hain  agar hum chatay hain ka neechay wala box uper aa jaye to hum z index property use karain gay jis ka box uper krna ha us main means box1 position relative laga kr box 1 main*/
+
+        }
+
+        .box3 {
+            background-color: rgb(203, 168, 235);
+            /* position fixed means jis bhi element ya box per lagaye gain wo apni jaga sa move nhi karay ga chahay page scroll bhi krlo uper ya neechay */
+            /* position: fixed;
+            bottom: 0%;
+            left: 8vw;
+            height: 113px; */
+        }
+
+        .box4 {
+            background-color: rgb(236, 205, 183);
+        }
+
+        .parent {
+            padding: 45px;
+            margin: 40px;
+            border: 4px solid purple;
+            /* position: absolute; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>

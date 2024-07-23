@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        img{
+            /* float sa img left main chali gai or neechay walay elemnts ko sath anay allow kiya isi tarah right pa karain gay to right pa aa jaye gi */
+            float: left;
+            /* float: right; */
+        }
+        .cards{
+            border: 2px solid black;
+            /* flow root sa img border ka andar aa gai */
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid blueviolet;
+        }
+        .card:nth-child(4){
+            /* clear: left; */
+            /* clear: right; */
+            clear: both;
+            /* img left side sa card ka uper nhi aye gi agar both kr dain to left right dono sa uper rhay gi card 3 ka */
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="painting-mountain-lake-with-mountain-background_188544-9126.avif" alt="" width="250px">
+        <div class="card">Lorempsum dolor sit amet consectetur adipisicing elit. Blanditiis ratione cumque fugiat nostrum, ea est eum dolorem reprehenderit sint, in dicta commodi. Cumque nam at dolorum minima, fugit quod quis consequuntur minus maximejhh iuugffy uhih ij8y iuuusdfhioufhythfn d jdhhrfrhello iAMIOFJF OFJKDSMNCKDS IJFEdniefjdkncv fdijfejf oefjd lsjf.</div>
+        <div class="card">card 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit dolor consequatur explicabo animi, nulla dolore veritatis molestias temporibus. Ab ipsa dolorum minima neque aliquid doloremque ullam, molestiae similique porro sit hic! Deleniti, sint. Nihil esse ea facilis vitae odit.</div>
+        <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis illo eum facere. Cum modi, cumque ipsam quasi laboriosam nihil doloribus reiciendis dolores culpa possimus assumenda praesentium a voluptates sapiente itaque corporis fugit cupiditate quia soluta eum. Vitae molestiae dignissimos tempore incidunt dolor ut aspernatuLorem ipsum dolor sit amet consectetur adipisicing elit. Illo corporis fugit aliquam et sed odit molestias pariatur soluta rem cum eveniet saepe veritatis sequi, perferendis libero sint. Eius, praesentium expedita.</div>
+    </div>
+</body>
+</html>

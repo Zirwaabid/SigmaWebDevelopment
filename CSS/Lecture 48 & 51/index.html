@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 80vh;
+            background-color: aquamarine;
+            position: relative;
+        }
+        .ball{
+            background-color: crimson;
+            height: 121px;
+            width: 121px;
+            border-radius: 70px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            animation: bouncex 3s linear infinite ,bouncey 1s ease-out infinite alternate;
+            
+        
+        }
+        @keyframes bouncex{
+          From{
+            left: 0;
+          }
+          To{
+              left:100% ;
+          }  
+        }
+
+        @keyframes bouncey{
+            From{
+                bottom: 0;
+            }
+            To{
+                bottom:100% ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

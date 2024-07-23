@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            /* width: 80vw; */
+            height: 70vh;
+            /* koi bhi grid property laganay sai pehlay display grid likhna zarori ha */
+            display: grid;
+
+            /* ya laga kr jitna px likho gay utni columns banain gi same for rows */
+            grid-template-columns: [pehla] 100px [dusra] 130px [t];
+            grid-template-rows: 100px 100px 100px;
+
+            /* fr unit jitna lagayn ga wo utni space lay ga according to width (for columns and rows both)
+            grid-template-columns: 1fr 2fr 1fr; */
+
+            /* gap is better than padding.gap sa gap aye ga rows and columns main same flex box jaisa */
+            row-gap: 30px;
+            column-gap: 30px;
+            /* ik sath bhi likh sktay hain first row second coloumn
+            gap: 30px 30px; */
+
+            /* content agar grid ka according set krna ha to only applicable when container is bigger than grid phir he to us ka andar set ho ga*/
+            justify-content: center;
+            align-content: center;
+
+            /* item agar apnay he cell ka according set krna hai to
+        justify-items: center;
+        align-items: center; */
+
+            /* repeat kr sktay hain means 4 bar 1fr repeat krna ha
+        grid-template-columns: repeat(4,1fr); */
+
+            /* means 4 bar repeat krna hai minimum 100px or max 1fr ho column
+        grid-template-columns: repeat(4,minmax(100px,1fr)); */
+
+            /* we can use place content in place of justify or align content
+        place-content: center; */
+
+
+        }
+
+        .item {
+            border: 2px solid rgb(103, 119, 43);
+            width: 55px;
+            height: 55px;
+
+        }
+
+        .item-4 {
+
+            /* means ka 4 wala 1 row sa start ho 1 per end or 1 column sa start ho 1 pa end matlab ya 1 ki jaga per chala jaye ga */
+            grid-row: 1/1;
+            grid-column: 1/1;
+
+            /* uper her column ya row ko nam dai kr is tarah bhi likh sktay hain */
+            /* grid-column: pehla/pehla; */
+            /* grid-column: pehla/t; */
+
+            /* is ko is tarah bhi likh saktay hain same for column */
+            /* grid-row-start: 1;
+            grid-row-end: 1; */
+        }
+
+        .item-1 {
+
+            /* 1 wala apni jahga per aa jaye ga or overlap ho jaye ga */
+            grid-row: 1/1;
+            grid-column: 1/1;
+        }
+
+        .item-5 {
+            align-self: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+</body>
+
+</html>

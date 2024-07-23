@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        }  */
+        /* this code is use jab hum apni website kisi or device main dekhana chahtay hain phir hum media likh kar not ya only ka baad us device ka name likhtay hain jis per hum nay wo website chalani hoti ha or us ka baad wo likhtay hain jis tarah dekhani hoti ha uper wala formula use kr kay */
+
+        @media only screen and (orientation:landscape){
+            body{
+                border: 2px solid rgb(29, 28, 28);
+            }
+        }
+        body{
+            background-color: rgb(180, 148, 209);
+        }
+         @media only screen and (max-width:455px){
+            body{
+                background-color: #cc3b3b;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+         }
+           
+        .boxes{
+            display: flex;
+        }
+        .box{
+            height: 344px;
+            width: 344px;
+            background-color: rgb(236, 126, 52);
+            padding: 3px;
+            margin: 3px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>Hi I am a cute body</div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+</body>
+</html>

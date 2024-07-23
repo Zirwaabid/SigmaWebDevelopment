@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --bodycolor: #87bda2;
+    --navcolor: #4a9687;
+    --boxesbg: #fff;
+    --circlefill:rgb(4, 44, 59);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bodycolor);
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background-color: var(--navcolor);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 9px 29px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--boxesbg);
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(4, 78, 62);
+}
+
+.boxes {
+    display: flex;
+    padding: 80px 4px;
+}
+
+.box1 {
+    border: 28px solid rgb(252, 251, 251);
+    width: 37vw;
+    height: auto;
+    text-align: center;
+    position: relative;
+    left: 71px;
+    background-color: var(--boxesbg);
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.box1 h2 {
+    position: relative;
+    top: -8px;
+    font-size: 30px;
+}
+
+.box2 {
+    border: 28px solid white;
+    width: 37vw;
+    height: auto;
+    text-align: center;
+    position: relative;
+    left: 175px;
+    background-color: var(--boxesbg);
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.box2 h2 {
+    position: relative;
+    top: -8px;
+    font-size: 30px;
+}
+
+.footer{
+    border: 2px solid var(--boxesbg);
+    width: auto;
+    height: 100%;
+    position: relative;
+    top: -33px;
+    background-color: var(--boxesbg);
+    border-radius: 12px;
+}
+.footer p{
+    font-size: 28px;
+    text-align: center;
+}
+.orange-box{
+    height: 34px;
+    width: 34px;
+    background:var(--circlefill) ;
+    position: fixed;
+    bottom: 12px;
+    right: 23px;
+    border-radius: 60px;
+}

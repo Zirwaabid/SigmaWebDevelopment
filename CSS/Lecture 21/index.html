@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* BUT THESE THINGS ARE NOT RECOMMENDED TO USE */
+        /* specificity of element selector is 1 */
+        h1 {
+            color: blueviolet;
+        }
+
+        /* specificity of class selector is 10 */
+        .owl {
+            color: brown;
+        }
+
+        /* specificity of attribute selector is 10 */
+        [data-x="a"] {
+            color: blue;
+        }
+
+        /* specificity of id selector is 100 */
+        #dog {
+            color: darkgoldenrod;
+        }
+        /* quiz */
+ /* specificity of this complex selector is a=1,.harryclass=10,.rohanclass=10,href(attribute)=10,hover(pseudo class)=10 TOTAL=41*/
+        a.harryclass.rohan-class[href]:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="owl" id="dog" data-x="a">Hi,I am Zirwa Abid</h1>
+    <!-- So, the order of specificity is:
+
+Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+
+Specificity Calculation
+To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000 -->
+</body>
+
+</html>

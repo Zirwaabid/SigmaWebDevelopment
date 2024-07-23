@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit & object Cover</title>
+    <style>
+        .container{
+            height: 430px;
+            width: 420px;
+            border: 2px solid black;
+
+            /* we can also set img through backgroud */
+            /* background-image: url( "https://cdn.pixabay.com/photo/2019/03/05/06/37/insect-4035660_640.jpg"); */
+            /* background-position: top right; */
+            background-position: center center;
+
+            /* if we use small size image then it will repeat */
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNB0u47ft65jCbTwqM85Wcidxgb7yWGDQLqA&s");
+            background-repeat: no-repeat;
+
+            /* background-clip: learn from mdn (very less use in practical); */
+            
+          
+        }
+        img{
+            height: 430px;
+            width: 420px;
+
+            /* cover means jo img ki height or width di hai us main img ko fit kr do yani cover kr do real main to us ki w or h ziyada hogi lakin ya property usay crop kr kay fit kr dai gi  */
+            /* object-fit: cover; */
+
+            /* cover sa crop ho gi pic lakin hum decide kr sktay hain ka kon sa area dekhana ha or kon sa crop krna ha */
+            /* object-position: bottom right; */
+            /* object-position: top bottom; */
+
+            /* is tarah apni mrzi sa position bhi da saktay hain */
+            /* object-position: -68px -10px; */
+
+            /* fill sa imf usi h or w main adjust ho jaye gi lakin ratio kharab ho jaye gi */
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+
+            /* lakin agr hum chahtay hain kay image crop hoye baghair set ho to hum ya property laga dain ga lakin ya crop howay baghair set to ho jaye gi lakin jaga bach jaye gi  */
+            /* object-fit: contain; */
+            /* object-position: 50% 50%; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://cdn.pixabay.com/photo/2019/03/05/06/37/insect-4035660_640.jpg" alt=""> -->
+    </div>
+</body>
+</html>

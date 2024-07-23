@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container {
+            width: 50vw;
+            height: 30vh;
+            background-color: #4ecaf0;
+        }
+
+        .box {
+            width: 56px;
+            height: 56px;
+            /* background-color: brown; */
+            /* animation-name: MyAnimation;
+            animation-duration: 4s;
+            animation-timing-function:cubic-bezier(0, 1.24, 1, 0.75);
+            animation-delay: 3s;
+            animation-iteration-count: infinite; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; */
+
+            /* shortened way */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode (fill mode less use); */
+            /* animation: MyAnimation 4s ease-in 1s 3 alternate-reverse forwards (fillmode jo lagayn gay end pai wohe position retain kray ga) ;  */
+            animation: MyAnimation 2s ease-in-out 2s infinite, Animation2 2s ease-in-out 2s infinite;
+
+        }
+
+        @keyframes MyAnimation {
+            From {
+                background-color: chartreuse;
+
+
+            }
+
+            To {
+                background-color: deeppink;
+                /* transform: translateX(1000px) ; */
+            }
+        }
+
+        /* we can use many animation at once */
+        @keyframes Animation2 {
+            0% {
+                transform: rotate(50deg);
+            }
+
+            20% {
+                transform: rotate(100deg);
+            }
+
+            40% {
+                transform: rotate(150deg);
+            }
+
+            60% {
+                transform: rotate(200deg);
+            }
+
+            80% {
+                transform: rotate(250deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            BOX
+        </div>
+    </div>
+
+</body>
+
+</html>

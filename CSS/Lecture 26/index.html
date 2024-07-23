@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 33vw;
+            height: 30vh;
+            /* overflow: scroll; */
+
+            /* if we use overflow auto then agar text ziyada ho ga tab he scroll show ho ga */
+            overflow: auto;
+
+            /* hum x and y ko individually bhi set kr saktay hain */
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+
+            /* x or y ko ik he line main bhi set kr saktay hain pehla x or dusra y */
+            overflow: hidden auto;
+
+            /* nowrap text ko horizontal yani ik line main kr deta ha */
+            /* white-space: nowrap; */
+
+            /* ellipsis ki waja sa text ka agay dots aa jatay hain */
+            /* text-overflow: ellipsis;
+            overflow: hidden; */
+
+            /* clip sa dot show nhi hon gay text andar ko ghus jaye ga */
+            /* text-overflow: clip; */
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Hi I am a good box Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eaque iure, porro hic labore quasi molestiae ut maiores accusamus quam nihil reprehenderit voluptates, vel voluptatum fuga. Aspernatur aliquid dolore id reiciendis quidem consectetur? Aliquid cumque tempore quos ipsam quod blanditiis, iure enim iste autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolor magni voluptas, quaerat reprehenderit totam provident assumenda cupiditate officiis debitis! Reprehenderit rerum saepe aspernatur eligendi, atque, fuga debitis deserunt adipisci dolor in soluta!
+    </div>
+</body>
+</html>
