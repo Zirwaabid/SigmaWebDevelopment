@@ -1,0 +1,13 @@
+console.log("Hello World")
+
+console.log(document.body.firstElementChild)
+console.log(document.body.firstElementChild.childNodes)
+console.log(document.body.firstElementChild.children)
+console.log(document.body.firstElementChild.children[0])
+console.log(document.body.firstElementChild.children[1])
+console.log(document.body.firstElementChild.children[2])
+console.log(document.body.firstElementChild.children[3])
+console.log(document.body.firstElementChild.children[4])
+console.log(document.body.firstElementChild.children[4].nextElementSibling)
+console.log(document.body.firstElementChild.children[4].previousElementSibling)
+console.log(document.body.firstElementChild.children[4].previousSibling)
