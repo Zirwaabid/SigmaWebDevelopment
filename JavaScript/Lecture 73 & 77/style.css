@@ -1,29 +1,36 @@
-.container {
+.card{
+    display: flex;
+    border: 2px solid black;
+    width: 900px;
+}
+
+.image img {
+    width: 200px;
+}
+
+/* .container {
     height: 23.5vh;
-    width: 175vh;
+    width: 170vh;
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
-}
+} */
 
-.thumbnail img {
-    border-radius: 15px;
-    margin-left: 15px;
-    position: absolute;
-    margin-top: 13.5px;
-}
 
-.title {
+/* .title {
     position: relative;
     color: white;
     top: 18px;
     left: 270px;
     font-size: 20px;
-}
+    font-size: 30px;
+} */
 
-.details {
+/* .details {
     position: relative;
+    top: 26px;
     display: flex;
     margin-left: 38.5vh;
     color: rgb(201, 204, 207);
     gap: 1vh;
-}
+    font-size: 17px;
+} */
