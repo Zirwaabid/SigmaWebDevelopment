@@ -1,0 +1,29 @@
+.container {
+    height: 23.5vh;
+    width: 175vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.thumbnail img {
+    border-radius: 15px;
+    margin-left: 15px;
+    position: absolute;
+    margin-top: 13.5px;
+}
+
+.title {
+    position: relative;
+    color: white;
+    top: 18px;
+    left: 270px;
+    font-size: 20px;
+}
+
+.details {
+    position: relative;
+    display: flex;
+    margin-left: 38.5vh;
+    color: rgb(201, 204, 207);
+    gap: 1vh;
+}
